@@ -8,14 +8,14 @@ function fetchingContact() {
 
 function  successFunc(contacts) {
 	
-	document.querySelector("#contacts_id").innerHTML="";
+	document.querySelector("#contactsUl").innerHTML="";
 	for (var i = 0; i < contacts.length; i++) {
 		
 		if(contacts[i].displayName)
 		{
 			var li = document.createElement("li");
 			li.innerHTML=contacts[i].displayName;
-			document.querySelector("#contacts_id").appendChild(li);
+			document.querySelector("#contactsUl").appendChild(li);
 		}
 	}
 }

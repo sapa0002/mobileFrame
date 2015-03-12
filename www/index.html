@@ -5,7 +5,7 @@
 
   <meta charset="UTF-8">
 
-  <title>CodePen - Navigation Tabs Improved</title>
+  <title>Mobile framework app</title>
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -15,54 +15,47 @@
 
   <nav>
 <ul class="tabs">
-    <li class="tab"><a href="#home" data-role="pagelink" class="activetab">Home</a></li>
-    <li class="tab"><a href="#stuff" data-role="pagelink" class="">Stuff</a></li>
-    <li class="tab"><a href="#other" data-role="pagelink" class="">Other</a></li>
+    <li class="tab"><a href="#home" data-role="pagelink" class="activetab"><object data="./img/1.svg" type="image/svg+xml" id="1SVG" width="80%" height="80%"></object></a></li>
+
+    <li class="tab"><a href="#locations" data-role="pagelink" class=""><object data="./img/2.svg" type="image/svg+xml" id="2SVG" width="80%" height="80%"></object></a></li>
+
+    <li class="tab"><a href="#contacts" data-role="pagelink" class=""><object data="./img/3.svg" type="image/svg+xml" id="3SVG" width="80%" height="80%"></object></a></li>
 </ul>
 </nav>
 
 <div data-role="page" id="home" class="">
   <div data-role="content">
     <h3>Home</h3>
-    <p>Some content on the home page.</p>
-    <p>Some content on the home page.</p>
-    <p>Some content on the home page.</p>
-    <p>Some content on the home page.</p>
-    <p>Some content on the home page.</p>
+    <p>My app is cool</p>
+    <p>Because it's cross-platform</p>
+    <p>The app shows my current location</p>
+    <p>It can also fetch contacts</p>
+    <p>Contacts and geolocation APIs are used</p>
   </div>
 </div>
 
 <div data-role="page" id="stuff" class="hidden">
   <div data-role="content">
-    <h3>Stuff</h3>
-    <p>Some content on the stuff page.</p>
-    <p>Some content on the stuff page.</p>
-    <p>Some content on the stuff page.</p>
-    <p>Some content on the stuff page.</p>
-    <p>Some content on the stuff page.</p>
-    <p>Some content on the stuff page.</p>
-    <p>Some content on the stuff page.</p>
-    <p>Some content on the stuff page.</p>
-    <p>Some content on the stuff page.</p>
-    <p>Some content on the stuff page.</p>
-    <p>Some content on the stuff page.</p>
-    <p>Some content on the stuff page.</p>
+    <h3>Locations</h3>
+    <p id="locationsP">Your current location</p>
+    <div id="locationsDiv"></div>
   </div>
 </div>
 
 <div data-role="page" id="other" class="hidden">
   <div data-role="content">
-    <h3>Other</h3>
-    <p>Some content on the stuff page.</p>
-    <p>Some content on the stuff page.</p>
-    <p>Some content on the stuff page.</p>
-    <p>Some content on the stuff page.</p>
-    <p>Some content on the stuff page.</p>
-    <p>Some content on the stuff page.</p>
+    <h3>Contacts</h3>
+    <p id="contactsP">Phone contacts</p>
+    <ul id="contactsUl">
+    </ul>
   </div>
 </div>
 
-  <script src="js/index.js"></script>
+        
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/location.js"></script>
+        <script type="text/javascript" src="js/contacts.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
 
 </body>
 

@@ -10,7 +10,7 @@ function createLocations(){
 	
 	container = document.createElement("div");
 	container.setAttribute("class", "container");
-	document.querySelector("#mapDiv").appendChild(container);
+	document.querySelector("#locationsDiv").appendChild(container);
 	
 	
 	//no geolocation API in the browser
