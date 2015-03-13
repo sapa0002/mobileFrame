@@ -97,74 +97,74 @@ function addDispatch(num) {
 //For tab change selection
 function tabSwitch(currentTab) {
     if (currentTab == "home") {
-//      var localHome1 = document.getElementById("homeImg").contentDocument;
-//      var localHome2 = localHome1.contentDocument;
-//    var localHome3 = localHome2.querySelector("#Capa_home");
-//        //localHome1.querySelector("#Capa_home").setAttribute("fill", "#009FD4");
-//          localHome3.style.backgroundColor="grey"
-//        
-//
-//        //Location Tab
-//        var localLocation1 = document.getElementById("locationsImg");
-//        var localLocation2 = localLocation1.contentDocument;
-//        var localLocation3 = localLocation2.querySelector("#Capa_location");
-//       // localLocation3.setAttribute("fill", "grey");
-//        localLocation3.style.backgroundColor="grey"
-//
-//        //ContactTab
-//        var localContact1 = document.getElementById("contactsImg");
-//        var localContact2 = localContact1.contentDocument;
-//        var localContact3 = localContact2.querySelector("#Capa_contact");
-//       // localContact3.setAttribute("fill", "grey");
-//        
-//        localContact3.style.backgroundColor="grey"
+      var localHome1 = document.getElementById("homeImg");
+      var localHome2 = localHome1.contentDocument;
+    var localHome3 = localHome2.querySelector("#Capa_home");
+        //localHome1.querySelector("#Capa_home").setAttribute("fill", "#009FD4");
+          localHome3.style.backgroundColor="grey"
+        
+
+        //Location Tab
+        var localLocation1 = document.getElementById("locationsImg");
+        var localLocation2 = localLocation1.contentDocument;
+        var localLocation3 = localLocation2.querySelector("#Capa_location");
+       // localLocation3.setAttribute("fill", "grey");
+        localLocation3.style.backgroundColor="grey"
+
+        //ContactTab
+        var localContact1 = document.getElementById("contactsImg");
+        var localContact2 = localContact1.contentDocument;
+        var localContact3 = localContact2.querySelector("#Capa_contact");
+       // localContact3.setAttribute("fill", "grey");
+        
+        localContact3.style.backgroundColor="grey"
 
     } else if (currentTab == "locations") {
         
         //Home tab
-//        var localHome21 = document.getElementById("homeImg");
-//        var localHome22 = localHome21.contentDocument;
-//        var localHome23 = localHome22.querySelector("#Capa_home");
-//        //localHome23.setAttribute("fill", "grey");
-//localHome23.style.backgroundColor="grey"
-//        //Location Tab
-//        var localLocation21 = document.getElementById("locationsImg");
-//        var localLocation22 = localLocation21.contentDocument;
-//        var localLocation23 = localLocation22.querySelector("#Capa_location");
-//       // localLocation23.setAttribute("fill", "#009FD4");
-// localLocation23.style.backgroundColor="grey"
-//        //ContactTab
-//        var localContact21 = document.getElementById("contactsImg");
-//        var localContact22 = localContact21.contentDocument;
-//        var localContact23 = localContact22.querySelector("#Capa_contact");
-//       // localContact23.setAttribute("fill", "grey");
-//         localContact23.style.backgroundColor="grey"
+        var localHome21 = document.getElementById("homeImg");
+        var localHome22 = localHome21.contentDocument;
+        var localHome23 = localHome22.querySelector("#Capa_home");
+        //localHome23.setAttribute("fill", "grey");
+localHome23.style.backgroundColor="grey"
+        //Location Tab
+        var localLocation21 = document.getElementById("locationsImg");
+        var localLocation22 = localLocation21.contentDocument;
+        var localLocation23 = localLocation22.querySelector("#Capa_location");
+       // localLocation23.setAttribute("fill", "#009FD4");
+ localLocation23.style.backgroundColor="grey"
+        //ContactTab
+        var localContact21 = document.getElementById("contactsImg");
+        var localContact22 = localContact21.contentDocument;
+        var localContact23 = localContact22.querySelector("#Capa_contact");
+       // localContact23.setAttribute("fill", "grey");
+         localContact23.style.backgroundColor="grey"
         
-        //Get location
+        // location
         createLocations();
         
     } else if (currentTab == "contacts") {
         
-//        //Home tab
-//        var localHome31 = document.getElementById("homeImg");
-//        var localHome32 = localHome31.contentDocument;
-//        var localHome33 = localHome32.querySelector("#Capa_home");
-//        //localHome33.setAttribute("fill", "grey");
-//         localHome33.style.backgroundColor="grey"
-//
-//        //Location Tab
-//        var localLocation31 = document.getElementById("locationsImg");
-//        var localLocation32 = localLocation31.contentDocument;
-//        var localLocation33 = localLocation32.querySelector("#Capa_location");
-//        //localLocation33.setAttribute("fill", "grey");
-//        localLocation33.style.backgroundColor="grey"
-//
-//        //ContactTab
-//        var localContact31 = document.getElementById("contactsImg");
-//        var localContact32 = localContact31.contentDocument;
-//        var localContact33 = localContact32.querySelector("#Capa_contact");
-//        //localContact33.setAttribute("fill", "#009FD4");
-//         localContact33.style.backgroundColor="#009FD4"
+        //Home tab
+        var localHome31 = document.getElementById("homeImg");
+        var localHome32 = localHome31.contentDocument;
+        var localHome33 = localHome32.querySelector("#Capa_home");
+        //localHome33.setAttribute("fill", "grey");
+         localHome33.style.backgroundColor="grey"
+
+        //Location Tab
+        var localLocation31 = document.getElementById("locationsImg");
+        var localLocation32 = localLocation31.contentDocument;
+        var localLocation33 = localLocation32.querySelector("#Capa_location");
+        //localLocation33.setAttribute("fill", "grey");
+        localLocation33.style.backgroundColor="grey"
+
+        //ContactTab
+        var localContact31 = document.getElementById("contactsImg");
+        var localContact32 = localContact31.contentDocument;
+        var localContact33 = localContact32.querySelector("#Capa_contact");
+        //localContact33.setAttribute("fill", "#009FD4");
+         localContact33.style.backgroundColor="grey"
         
         
         //Get contacts
@@ -172,7 +172,7 @@ function tabSwitch(currentTab) {
     }
 }
 
-//handle 300ms delay
+//codepan example to handle 300ms delay, 
 function touchHandler(ev){
 
   //this function will run when the touch events happen

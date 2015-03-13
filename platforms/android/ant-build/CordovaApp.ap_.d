@@ -37,8 +37,14 @@ C:\Users\Abix130890\mobileFramework\platforms\android\assets\www\index.html \
 C:\Users\Abix130890\mobileFramework\platforms\android\assets\www\js \
 C:\Users\Abix130890\mobileFramework\platforms\android\assets\www\plugins \
 C:\Users\Abix130890\mobileFramework\platforms\android\assets\www\css\index.css \
+C:\Users\Abix130890\mobileFramework\platforms\android\assets\www\css\style.css \
+C:\Users\Abix130890\mobileFramework\platforms\android\assets\www\img\1.svg \
+C:\Users\Abix130890\mobileFramework\platforms\android\assets\www\img\2.svg \
+C:\Users\Abix130890\mobileFramework\platforms\android\assets\www\img\3.svg \
 C:\Users\Abix130890\mobileFramework\platforms\android\assets\www\img\logo.png \
+C:\Users\Abix130890\mobileFramework\platforms\android\assets\www\js\contacts.js \
 C:\Users\Abix130890\mobileFramework\platforms\android\assets\www\js\index.js \
+C:\Users\Abix130890\mobileFramework\platforms\android\assets\www\js\locations.js \
 C:\Users\Abix130890\mobileFramework\platforms\android\assets\www\plugins\org.apache.cordova.contacts \
 C:\Users\Abix130890\mobileFramework\platforms\android\assets\www\plugins\org.apache.cordova.contacts\www \
 C:\Users\Abix130890\mobileFramework\platforms\android\assets\www\plugins\org.apache.cordova.contacts\www\Contact.js \
