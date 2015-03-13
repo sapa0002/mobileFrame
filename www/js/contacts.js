@@ -1,4 +1,4 @@
-function fetchingContact() {
+function fetchingContacts() {
 	var options = new ContactFindOptions();
 
 	options.multiple = true;

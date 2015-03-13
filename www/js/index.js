@@ -9,9 +9,9 @@ var preTabUrl;
 var pageshow = document.createEvent("CustomEvent");
 pageshow.initEvent("pageShow", false, true);
 
-document.addEventListener("DOMContentLoaded", function () { //deviceready,DOMContentLoaded
-    //device ready listener
-    document.addEventListener("scroll", handleScrolling, false);
+document.addEventListener("DOMContentLoaded", function () { 
+    
+   
 
     pages = document.querySelectorAll('[data-role="page"]');
     numPages = pages.length;
@@ -26,14 +26,12 @@ document.addEventListener("DOMContentLoaded", function () { //deviceready,DOMCon
     }
     loadPage(null);
     
-    //for default selection
-//  preTabUrl="home";
-//  selecteTab("home");
     
-    var svgEmbed = document.querySelector("#homeSVG");
+    
+    var svgEmbed = document.querySelector("#homeImg");
     svgEmbed.addEventListener("load", function(){
         preTabUrl="home";
-        selecteTab("home");
+        tabSwitch("home");
     });
     
 });
@@ -52,6 +50,7 @@ function handlePageShow(ev) {
 }
 
 function loadPage(url) {
+    console.log(url);
     if (url == null) {
         //home page first call
         pages[0].className = 'active';
@@ -81,7 +80,7 @@ function loadPage(url) {
         if(preTabUrl != url)
         {
             //Change selection
-            selecteTab(url);
+            tabSwitch(url);
             preTabUrl=url;
         }
     }
@@ -98,66 +97,75 @@ function addDispatch(num) {
 //For tab change selection
 function tabSwitch(currentTab) {
     if (currentTab == "home") {
-        //Home tab
-        var localHome1 = document.getElementById("homeSVG");
-        var localHome2 = localHome1.contentDocument;
-        var localHome3 = localHome2.querySelector("#Capa_home");
-        localHome3.setAttribute("fill", "#009FD4"); 
-
-        //Location Tab
-        var localLocation1 = document.getElementById("locationSVG");
-        var localLocation2 = a1.contentDocument;
-        var localLocation3 = b1.querySelector("#Capa_location");
-        localLocation3.setAttribute("fill", "grey");
-
-        //ContactTab
-        var localContact1 = document.getElementById("contactsSVG");
-        var localContact2 = a2.contentDocument;
-        var localContact3 = b2.querySelector("#Capa_contact");
-        localContact3.setAttribute("fill", "grey");
+//      var localHome1 = document.getElementById("homeImg").contentDocument;
+//      var localHome2 = localHome1.contentDocument;
+//    var localHome3 = localHome2.querySelector("#Capa_home");
+//        //localHome1.querySelector("#Capa_home").setAttribute("fill", "#009FD4");
+//          localHome3.style.backgroundColor="grey"
+//        
+//
+//        //Location Tab
+//        var localLocation1 = document.getElementById("locationsImg");
+//        var localLocation2 = localLocation1.contentDocument;
+//        var localLocation3 = localLocation2.querySelector("#Capa_location");
+//       // localLocation3.setAttribute("fill", "grey");
+//        localLocation3.style.backgroundColor="grey"
+//
+//        //ContactTab
+//        var localContact1 = document.getElementById("contactsImg");
+//        var localContact2 = localContact1.contentDocument;
+//        var localContact3 = localContact2.querySelector("#Capa_contact");
+//       // localContact3.setAttribute("fill", "grey");
+//        
+//        localContact3.style.backgroundColor="grey"
 
     } else if (currentTab == "locations") {
         
         //Home tab
-        var localHome21 = document.getElementById("homeSVG");
-        var localHome22 = a.contentDocument;
-        var localHome23 = b.querySelector("#Capa_home");
-        localHome23.setAttribute("fill", "grey");
-
-        //Location Tab
-        var localLocation21 = document.getElementById("locationSVG");
-        var localLocation22 = localLocation21.contentDocument;
-        var localLocation23 = localLocation22.querySelector("#Capa_location");
-        localLocation23.setAttribute("fill", "#009FD4");
-
-        //ContactTab
-        var localContact21 = document.getElementById("contactsSVG");
-        var localContact22 = localContact31.contentDocument;
-        var localContact23 = localContact32.querySelector("#Capa_contact");
-        localContact23.setAttribute("fill", "grey");
+//        var localHome21 = document.getElementById("homeImg");
+//        var localHome22 = localHome21.contentDocument;
+//        var localHome23 = localHome22.querySelector("#Capa_home");
+//        //localHome23.setAttribute("fill", "grey");
+//localHome23.style.backgroundColor="grey"
+//        //Location Tab
+//        var localLocation21 = document.getElementById("locationsImg");
+//        var localLocation22 = localLocation21.contentDocument;
+//        var localLocation23 = localLocation22.querySelector("#Capa_location");
+//       // localLocation23.setAttribute("fill", "#009FD4");
+// localLocation23.style.backgroundColor="grey"
+//        //ContactTab
+//        var localContact21 = document.getElementById("contactsImg");
+//        var localContact22 = localContact21.contentDocument;
+//        var localContact23 = localContact22.querySelector("#Capa_contact");
+//       // localContact23.setAttribute("fill", "grey");
+//         localContact23.style.backgroundColor="grey"
         
         //Get location
         createLocations();
         
     } else if (currentTab == "contacts") {
         
-        //Home tab
-        var localHome31 = document.getElementById("homeSVG");
-        var localHome32 = localHome31.contentDocument;
-        var localHome33 = localHome32.querySelector("#Capa_home");
-        localHome33.setAttribute("fill", "grey");
-
-        //Location Tab
-        var localLocation31 = document.getElementById("locationSVG");
-        var localLocation32 = a1.contentDocument;
-        var localLocation33 = b1.querySelector("#Capa_location");
-        localLocation33.setAttribute("fill", "grey");
-
-        //ContactTab
-        var localContact31 = document.getElementById("contactsSVG");
-        var localContact32 = a2.contentDocument;
-        var localContact33 = b2.querySelector("#Capa_contact");
-        localContact33.setAttribute("fill", "#009FD4");
+//        //Home tab
+//        var localHome31 = document.getElementById("homeImg");
+//        var localHome32 = localHome31.contentDocument;
+//        var localHome33 = localHome32.querySelector("#Capa_home");
+//        //localHome33.setAttribute("fill", "grey");
+//         localHome33.style.backgroundColor="grey"
+//
+//        //Location Tab
+//        var localLocation31 = document.getElementById("locationsImg");
+//        var localLocation32 = localLocation31.contentDocument;
+//        var localLocation33 = localLocation32.querySelector("#Capa_location");
+//        //localLocation33.setAttribute("fill", "grey");
+//        localLocation33.style.backgroundColor="grey"
+//
+//        //ContactTab
+//        var localContact31 = document.getElementById("contactsImg");
+//        var localContact32 = localContact31.contentDocument;
+//        var localContact33 = localContact32.querySelector("#Capa_contact");
+//        //localContact33.setAttribute("fill", "#009FD4");
+//         localContact33.style.backgroundColor="#009FD4"
+        
         
         //Get contacts
         fetchingContacts();
@@ -166,6 +174,7 @@ function tabSwitch(currentTab) {
 
 //handle 300ms delay
 function touchHandler(ev){
+
   //this function will run when the touch events happen
   if( ev.type == "touchend"){
     ev.preventDefault();
@@ -184,3 +193,4 @@ function touchHandler(ev){
     //change the touchend event into a click event and dispatch it immediately
     //this will skip the built-in 300ms delay before the click is fired by the browser
   }
+}

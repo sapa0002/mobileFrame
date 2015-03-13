@@ -7,11 +7,11 @@ var parameters;
 
 	
 function createLocations(){
-	
-	container = document.createElement("div");
-	container.setAttribute("class", "container");
-	document.querySelector("#locationsDiv").appendChild(container);
-	
+	console.log("createLocations");
+//	container = document.createElement("div");
+//	container.setAttribute("class", "locationsDiv");
+//	document.querySelector(".locationsDiv").appendChild(container);
+	var container=document.querySelector("#locationsDiv")
 	
 	//no geolocation API in the browser
 	if(!navigator.geolocation){
@@ -21,16 +21,18 @@ function createLocations(){
         
 			
 	}else {
+       // yesLocation();
     
     function yesLocation(position){
 	
 	var lngt = position.coords.longitude;
 	var ltd = position.coords.latitude;
-	document.querySelector("#yourLocation").innerHTML = "";
+        console.log(position);
+	document.querySelector("#locationsDiv").innerHTML = "";
 	//use canvas to create an img
 	canvas = document.createElement("canvas");
 	canvas.setAttribute("class", "canvas");
-	document.querySelector(".container").appendChild(canvas);
+	document.querySelector("#locationsDiv").appendChild(canvas);
 	canvas.width = "400";
 	canvas.height = "400";
 	var context = canvas.getContext("2d");
@@ -63,7 +65,7 @@ function noLocation() {
 		
 	navigator.geolocation.getCurrentPosition(yesLocation, noLocation, parameters);	
     }
-});
+};
 	
 
 	
