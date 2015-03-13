@@ -148,7 +148,7 @@ function tabSwitch(currentTab) {
         // On the Contacts Tab
         var localContact3 = document.getElementById("contactsImg").contentDocument.querySelector("#Capa_contact");
         
-         localContact3.style.backgroundColor="gray"
+         localContact3.style.backgroundColor="grey"
         
         
         //fucntion from contacts.js

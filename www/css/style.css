@@ -132,7 +132,7 @@ ul.tabs{
   width:100%;
 }
 .tabs li.tab{
-  background-color:#009FD4;
+  background-color:#020FD4;
   float:left; 
   height:3rem;
   display:inline-block;
@@ -141,22 +141,22 @@ ul.tabs{
 .tabs li.tab a{
   display: block;
   padding: 0.5rem 2rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 2rem;
   height: 2rem;
-  color: #fff;
+  color: white;
   text-decoration: none;
-  border-left:1px solid #666;
-  background-color: #555;
+  border-left:1px solid #777;
+  background-color: #666;
   text-align: center;
   border-bottom: 5px;
 }
 .tabs li.tab a.activetab{
   background-color:#333;
-  color: #0cf;
-  border-bottom:1px solid #666;
-  border-right:1px solid #222;
-  border-left:1px solid #666;
+  color: #8bf;
+  border-bottom:1px solid #777;
+  border-right:1px solid #333;
+  border-left:1px solid #578;
   position:relative;
   z-index:30;
 }
