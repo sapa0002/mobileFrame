@@ -107,19 +107,19 @@ function tabSwitch(currentTab) {
         //the Location Tab
         var localLocation1 = document.getElementById("locationsImg").contentDocument.querySelector("#Capa_location");
        
-        localLocation1.style.backgroundColor="blue"
+        localLocation1.style.backgroundColor="green"
 
         // the ContactTab
         var localContact1 = document.getElementById("contactsImg").contentDocument.querySelector("#Capa_contact");
        
-        localContact3.style.backgroundColor="blue"
+        localContact3.style.backgroundColor="green"
 
     } else if (currentTab == "locations") {
         
         //The home tab
         var localHome2 = document.getElementById("homeImg").contentDocument.querySelector("#Capa_home");
  
-        localHome2.style.backgroundColor="blue"
+        localHome2.style.backgroundColor="green"
         //On the Location Tab
         var localLocation2 = document.getElementById("locationsImg").contentDocument.querySelector("#Capa_location");
   
@@ -128,7 +128,7 @@ function tabSwitch(currentTab) {
         //The ContactTab
         var localContact2 = document.getElementById("contactsImg").contentDocument.querySelector("#Capa_contact");
         
-         localContact2.style.backgroundColor="blue"
+         localContact2.style.backgroundColor="green"
         
         //function  locations.js
         createLocations();
@@ -138,17 +138,17 @@ function tabSwitch(currentTab) {
         // the home tab
         var localHome3 = document.getElementById("homeImg").contentDocument.querySelector("#Capa_home");
       
-         localHome3.style.backgroundColor="blue"
+         localHome3.style.backgroundColor="green"
 
         // the Locations Tab
         var localLocation3 = document.getElementById("locationsImg").contentDocument.querySelector("#Capa_location");
       
-        localLocation3.style.backgroundColor="blue"
+        localLocation3.style.backgroundColor="green"
 
         // On the Contacts Tab
         var localContact3 = document.getElementById("contactsImg").contentDocument.querySelector("#Capa_contact");
-        
-         localContact3.style.backgroundColor="grey"
+        //console.log(localContact3);
+         localContact3.style.backgroundColor="red"
         
         
         //fucntion from contacts.js
